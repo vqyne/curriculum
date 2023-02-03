@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>@font-face {
+        font-family: 'circular-std';
+        src: url(fonts/circular-std.ttf);
+    }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>My Curriculum</title>
+</head>
+
+<body id="body" class="light-mode">
+    <div class="overflow-x-hidden">
+        <div class="w-full h-auto">
+            <div class="nocursor">
+             </div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="sm:hidden flex flex-row justify-between p-8 items-center gap-2">
+                <div class="pfp-container tablink">
+                    <button class="tablink">
+                        <img src="assets/pfp.png" alt="Profile picture"
+                            style="width:52px;height:52px;border-radius: 50%;border-style: groove;">
+                        </img>
+                    </button>
+                </div>
+                <div class="flex gap-10 mx-auto">
+                    <button id="home" class="tablink light-mode">Home</button>
+                    <button id="projects" class="tablink light-mode">Projects</button>
+                    <button id="aboutme" class="tablink light-mode">About me</button>
+                    <button id="contact" class="tablink light-mode">Contact</button>
+                </div>
+                <div class="darkmode-container">
+                    <!-- <button id="toggle-dark-mode" style="background-color: transparent;" class="darkmode-container">
+                        <span class="material-symbols-outlined light-mode">dark_mode</span>
+                    </button> -->
+                    <input id="toggle" class="toggle" type="checkbox">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="javascripts/script.js"></script>
+<script src="javascripts/circle.js"></script>
+<script>
+    var up = document.getElementById('GFG_UP');
+    var down = document.getElementById('GFG_DOWN');
+    var div = document.getElementById('GFG_DIV');
+      
+    up.innerHTML = "Click on button to hide the cursor from DIV.";
+      
+    /* Function to add class name to hide cursor element */
+    function GFG_Fun() {
+        div.classList.add("newClass");
+        down.innerHTML = "Cursor is removed from DIV!";
+    }
+</script>
+</html>
