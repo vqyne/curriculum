@@ -35,20 +35,19 @@ console.log(activePage);
 
 
 const homeButton = document.getElementById("home").addEventListener("click", function () {
-    window.toggle("/home.html", "_self");
+    window.toggle("/docs/index.html", "_self");
     body.classList.toggle('active');
 });
 const aboutButton = document.getElementById("aboutme").addEventListener("click", function () {
-    window.open("pages/about.html", "_self");
+    window.open("../pages/about.html", "_self");
     body.classList.toggle('active');
 });
 const contactButton = document.getElementById("contact").addEventListener("click", function () {
-    window.open("pages/contact.html", "_self");
+    window.open("../pages/contact.html", "_self");
     body.classList.toggle('active');
 });
 const projectsButton = document.getElementById("projects").addEventListener("click", function () {
-    window.open("pages/projects.html", "_self");
+    window.open("../pages/projects.html", "_self");
     body.classList.toggle('active');
 });
-
 
