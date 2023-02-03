@@ -7,7 +7,7 @@ var plugins = require('gulp-load-plugins')(); // tous les plugins de package.jso
 
 // Variables de chemins
 var source = '../scss'; // dossier de travail
-var destination = '../css'; // dossier à livrer
+var destination = '../docs'; // dossier à livrer
 
 gulp.task('css', function () {
   return gulp.src(source + '/styles.scss')
